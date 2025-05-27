@@ -514,16 +514,22 @@ nav {
 .certification__card--completed .certification__badge {
   background: var(--gradient-2);
   color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border: none;
 }
 
 .certification__card--pursuing .certification__badge {
-  background: #e9ecef;
+  background: white;
+  border: 1px solid #ddd;
+
   color: #333;
 }
 
 .certification__card h3 {
   margin-bottom: 1rem;
   font-size: 1.3rem;
+  font-weight: 600;
+  
 }
 
 .certification__meta {
@@ -531,24 +537,30 @@ nav {
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #666;
+  
 }
 
 .certification__meta i {
   margin-right: 0.3rem;
+  color: var(--primary-color);
 }
 
 .certification__details {
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px dashed #ddd;
-}
+  color:white;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} 
 
 .certification__details p {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #555;
+  color:white;
 }
 
 .link__button {
