@@ -240,7 +240,7 @@ nav {
 /* Skills Section */
 .skills {
   padding: 4rem 2rem;
-  /* background: #f8f9fa; */color: var(--extra-light);
+  color: var(--extra-light);
   text-align: center;
 }
 
@@ -250,7 +250,7 @@ nav {
 }
 
 .skills-container {
-  background-image: var(--gradient-2);
+  /* background-image: var(--gradient-2); */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
@@ -259,7 +259,7 @@ nav {
 }
 
 .skill-category {
-  /* background-color: white; */color: var(--extra-light);
+ 
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -386,14 +386,14 @@ nav {
 
 .project__tech span {
   background: var(--gradient-2);
-  color: white;
+  /* color: white; */
   padding: 0.3rem 0.8rem;
   border-radius: 50px;
   font-size: 0.8rem;
 }
 
 .project__description {
-  color: #555;
+  /* color: #555; */
   margin: 1rem 0;
   line-height: 1.6;
 }
@@ -478,7 +478,103 @@ nav {
 .portfolio__banner__card p {
   font-weight: 500;
 } */
+ /* Certifications Section */
+.certifications {
+  padding: 4rem 2rem;
+  /* background: #f8f9fa;background-image: var(--gradient-2); */
+}
 
+.certifications__grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.certification__card {
+  position: relative;
+  padding: 2rem;
+  /* background: white;background-image: var(--gradient-2); */
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.certification__badge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.certification__card--completed .certification__badge {
+  background: var(--gradient-2);
+  color: white;
+}
+
+.certification__card--pursuing .certification__badge {
+  background: #e9ecef;
+  color: #333;
+}
+
+.certification__card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.certification__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.certification__meta i {
+  margin-right: 0.3rem;
+}
+
+.certification__details {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #ddd;
+}
+
+.certification__details p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #555;
+}
+
+.link__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-image: var(--gradient-2);
+  /* color: white; */
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.link__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Grid */
+@media (min-width: 768px) {
+  .certifications__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* contact section----- */
 .contact__container {
   text-align: center;
 }
